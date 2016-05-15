@@ -7,16 +7,34 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Service.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+NSDate *dateTime;
+NSArray *consultaNuevaarrera;
 
+
+-(void)webView :(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                    message:@"Verifique su conexion"
+                                                   delegate:self
+                                          cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    [alert show];
+    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    UIUserNotificationSettings *notificationSettings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeAlert | UIUserNotificationTypeSound categories:nil];
+    
+    [[UIApplication sharedApplication] registerUserNotificationSettings:notificationSettings];
+    
     return YES;
 }
 
@@ -28,6 +46,46 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    NSLog(@"ESTOY EN BACKGROUND");
+    
+    [self nuevasCarreras];
+    
+}
+
+-(void) nuevasCarreras{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 3* NSEC_PER_SEC), dispatch_get_main_queue(),^{
+        NSTimeInterval timeRemaining = [UIApplication sharedApplication].backgroundTimeRemaining;
+        NSLog(@"%f",timeRemaining);
+        
+        consultaNuevaarrera = [Service ConsultaNuevasCarreras:^(id result)
+                               {
+                                   NSLog(@"resultado bbbbbb%@", [result description]);                            
+                               } failureBlock:^(NSError * error)
+                               {
+                                   NSLog(@"%@",error);
+                               }];
+        if (consultaNuevaarrera!=nil)
+        {
+            
+            UIApplication *app =[UIApplication sharedApplication];
+            UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+            
+            if (localNotification)
+            {
+                
+                localNotification.timeZone=[NSTimeZone defaultTimeZone];
+                localNotification.soundName=@"Goofy_Vo-Dave_Gir-8756_hifi.mp3";
+                localNotification.alertBody=@"Nueva Carrera";
+                [app scheduleLocalNotification:localNotification];
+                [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+                
+            }
+
+            
+        }
+       
+        [self nuevasCarreras];
+    });
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -36,6 +94,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+     NSLog(@"REGRESE DEL BACKGROUND");
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

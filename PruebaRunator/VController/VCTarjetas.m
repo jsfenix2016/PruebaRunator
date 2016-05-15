@@ -45,8 +45,15 @@ int max=700;
      {
          NSLog(@"%@",error);
      }];
- [activity detenerAnimacionEnVista:self];
-    [herramientas setIr:ConsultaCarrera];
+    
+    
+  NSSortDescriptor * ConsultaCarrera7 =[[NSSortDescriptor alloc] initWithKey:@"fecha" ascending:NO];
+    ConsultaCarrera = [ConsultaCarrera sortedArrayUsingDescriptors:ConsultaCarrera7];
+    [activity detenerAnimacionEnVista:self];
+    if (ConsultaCarrera!=nil) {
+        [herramientas setIr:ConsultaCarrera];
+    }
+    
     [self.tablaTarjetas reloadData];
 
 }
@@ -66,8 +73,12 @@ int max=700;
 //Metodo que define el numero de filas del tableview
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // NSUInteger c = [ConsultaProducto count];
-    return 5;//[listaCuentasArray count];
+    int cont = [ConsultaCarrera count];
+    if(cont < 50){
+    
+    }else
+        cont=50;
+    return cont;//[ConsultaCarrera count];
 }
 
 

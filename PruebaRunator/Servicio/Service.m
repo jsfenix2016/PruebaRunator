@@ -10,6 +10,7 @@
 #import "herramientas.h"
 #import "activity.h"
 
+
 @implementation Service
 
 
@@ -46,6 +47,8 @@ NSString *password=@"63bea7d5e84b6c45a4af9f9d3db714a8";
                 NSLog(@"DIC %@", responseDictionary);
                 
                 lista = [herramientas validarArray:responseDictionary];
+                
+                
                 NSLog(@"Se le envio al servidor: %@",lista);
             }
             
