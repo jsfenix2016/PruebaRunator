@@ -50,6 +50,7 @@ NSArray *consultaNuevaarrera;
     
     [self nuevasCarreras];
     
+    
 }
 
 -(void) nuevasCarreras{
@@ -59,7 +60,7 @@ NSArray *consultaNuevaarrera;
         
         consultaNuevaarrera = [Service ConsultaNuevasCarreras:^(id result)
                                {
-                                   NSLog(@"resultado bbbbbb%@", [result description]);                            
+                                   NSLog(@"resultado bbbbbb%@", [result description]);
                                } failureBlock:^(NSError * error)
                                {
                                    NSLog(@"%@",error);
