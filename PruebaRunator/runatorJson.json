@@ -1,0 +1,152 @@
+{
+    "status": "ok",
+    "data": {
+        "cards": [
+                  {
+                  "type": "run",
+                  "date": {
+                  "date": "2016-03-23 06:20:19",
+                  "timezone_type": 3,
+                  "timezone": "UTC"
+                  },
+                  "run_id": "56f2472941ec50992f8b4567",
+                  "user_id": "55f2d9b94f8bd9f73a8b4571",
+                  "user_name": "Mónica ",
+                  "user_photo": "https://runator.s3-eu-west-1.amazonaws.com/production/users/55f2d9b94f8bd9f73a8b4571_orig.jpg?1458140548",
+                  "country": "Spain",
+                  "state": "Comunidad Valenciana",
+                  "city": "Benidorm",
+                  "neighborhood": "",
+                  "distance": 8.1,
+                  "pace": {
+                  "hours": 0,
+                  "minutes": 5,
+                  "seconds": 29
+                  },
+                  "duration": "44m 32s",
+                  "polyline_truncated": "ccejF`hTwDrLuBp]aBt]QjNZhNfB`NSf@eBsMc@aNVgNh@}N`E{k@vCuLtFsJ}AhBgFrKmAzMiAfNqAvMs@fNe@h]tA|MdBvMoAoBoBsNC}NBmNf@kMjCs\\|@{MfC}K",
+                  "polyline": "ccejF`hTgBzEoAvEg@pFQrF{@jNo@nN_@nFe@jNDjNVrFn@jFv@tFThEi@aDk@oFy@cFu@kFPuFCwFZoFP{FVaGZsF^sETwFj@sFbAgNh@oFlBeErBeE`CmDbAMaDvBgFrKcAdFItFa@pFg@tFUrF{@bFc@nFOvFEhF_@~U^xFt@bFf@lF|@hFDfAuAwD}@gGq@kFe@yF`@cGCuFFwFLqEn@mNl@cFPoFt@kFTaFf@yFTsEpBiEvAgD",
+                  "photo": "https://runator.s3-eu-west-1.amazonaws.com/production/runs/56f2472941ec50992f8b4567_orig.jpg?1458718806",
+                  "is_liked": true,
+                  "likes": {
+                  "count": 17,
+                  "likes": []
+                  },
+                  "runator_user": {
+                  "id": "55f2d9b94f8bd9f73a8b4571",
+                  "name": "Mónica ",
+                  "photo": "https://runator.s3-eu-west-1.amazonaws.com/production/users/55f2d9b94f8bd9f73a8b4571_orig.jpg?1458140548",
+                  "photo_thumb": "https://runator.s3-eu-west-1.amazonaws.com/production/users/55f2d9b94f8bd9f73a8b4571_thmb.jpg?1458140548"
+                  },
+                  "run": {
+                  "id": "56f2472941ec50992f8b4567",
+                  "service": "garmin",
+                  "user": "55f2d9b94f8bd9f73a8b4571",
+                  "service_run_id": "1095662821",
+                  "distance": 8101,
+                  "speed": 3.03,
+                  "duration": 2672,
+                  "pace": 0.33,
+                  "distanceDisplay": 8.1,
+                  "speedDisplay": 10.91,
+                  "durationDisplay": "44m 32s",
+                  "paceDisplay": {
+                  "hours": 0,
+                  "minutes": 5,
+                  "seconds": 29
+                  },
+                  "unit": "km",
+                  "city": "Benidorm",
+                  "state": "Comunidad Valenciana",
+                  "neighborhood": null,
+                  "calories": "709",
+                  "total_climb": null,
+                  "weather": null,
+                  "polyline": "ccejF`hTgBzEoAvEg@pFQrF{@jNo@nN_@nFe@jNDjNVrFn@jFv@tFThEi@aDk@oFy@cFu@kFPuFCwFZoFP{FVaGZsF^sETwFj@sFbAgNh@oFlBeErBeE`CmDbAMaDvBgFrKcAdFItFa@pFg@tFUrF{@bFc@nFOvFEhF_@~U^xFt@bFf@lF|@hFDfAuAwD}@gGq@kFe@yF`@cGCuFFwFLqEn@mNl@cFPoFt@kFTaFf@yFTsEpBiEvAgD",
+                  "polyline_truncated": "ccejF`hTwDrLuBp]aBt]QjNZhNfB`NSf@eBsMc@aNVgNh@}N`E{k@vCuLtFsJ}AhBgFrKmAzMiAfNqAvMs@fNe@h]tA|MdBvMoAoBoBsNC}NBmNf@kMjCs\\|@{MfC}K",
+                  "valid": null,
+                  "photo": "https://runator.s3-eu-west-1.amazonaws.com/production/runs/56f2472941ec50992f8b4567_orig.jpg",
+                  "photo_thumb": "https://runator.s3-eu-west-1.amazonaws.com/production/runs/56f2472941ec50992f8b4567_thmb.jpg",
+                  "description": null,
+                  "effort": null,
+                  "shoes": null,
+                  "surface": "1",
+                  "created_at": {
+                  "date": "2016-03-23 07:35:05",
+                  "timezone_type": 3,
+                  "timezone": "UTC"
+                  },
+                  "updated_at": {
+                  "date": "2016-03-23 07:40:06",
+                  "timezone_type": 3,
+                  "timezone": "UTC"
+                  },
+                  "effort_index": 28,
+                  "record": {
+                  "__initializer__": null,
+                  "__cloner__": null,
+                  "__isInitialized__": true
+                  },
+                  "start_time": "03/23/2016-06:20:19",
+                  "runator_user": {
+                  "id": "55f2d9b94f8bd9f73a8b4571",
+                  "name": "Mónica ",
+                  "photo": "https://runator.s3-eu-west-1.amazonaws.com/production/users/55f2d9b94f8bd9f73a8b4571_orig.jpg?1458140548",
+                  "photo_thumb": "https://runator.s3-eu-west-1.amazonaws.com/production/users/55f2d9b94f8bd9f73a8b4571_thmb.jpg?1458140548",
+                  "totalRuns": 107
+                  },
+                  "comment_group": {
+                  "total_hits": 1,
+                  "current_hits": 1,
+                  "has_next": false,
+                  "comments": [],
+                  "last_comment": {
+                  "id": "56f264e6821b16c23edf01d2",
+                  "user": {
+                  "id": "565e1390821b16e230c4eeec",
+                  "name": "Pepe Martinez Arenas",
+                  "photo_thumb": "https://s3-eu-west-1.amazonaws.com/runator/images/default_thumbnail.png?1457522210"
+                  },
+                  "parent_id": null,
+                  "object_type": "run",
+                  "object_id": "56f2472941ec50992f8b4567",
+                  "comment": "que bonito hay estuve yo la semana pasada ",
+                  "created_at": "2016-03-23T09:41:58+00:00",
+                  "reported": null,
+                  "active": true
+                  }
+                  }
+                  },
+                  "paceDisplay": {
+                  "hours": 0,
+                  "minutes": 5,
+                  "seconds": 29
+                  },
+                  "distanceDisplay": 8.1,
+                  "durationDisplay": "44m 32s",
+                  "start_time": "03/23/2016-06:20:19",
+                  "comment_group": {
+                  "total_hits": 1,
+                  "current_hits": 1,
+                  "has_next": false,
+                  "comments": [],
+                  "last_comment": {
+                    "id": "56f264e6821b16c23edf01d2",
+                    "user": {
+                        "id": "565e1390821b16e230c4eeec",
+                        "name": "Pepe Martinez Arenas",
+                        "photo_thumb": "https://s3-eu-west-1.amazonaws.com/runator/images/default_thumbnail.png?1457522210"
+                            },
+                    "parent_id": null,
+                    "object_type": "run",
+                    "object_id": "56f2472941ec50992f8b4567",
+                    "comment": "que bonito hay estuve yo la semana pasada ",
+                    "created_at": "2016-03-23T09:41:58+00:00",
+                    "reported": null,
+                    "active": true
+                    }
+                  }
+                  
+                  }]
+    }
+}
